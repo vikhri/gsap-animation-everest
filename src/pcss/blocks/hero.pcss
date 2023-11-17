@@ -1,0 +1,83 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("../../images/mountain.png"), url("../../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__header {
+    height: 100px;
+  }
+
+  &__content {
+    width: 100%;
+    height: 100%;
+
+    padding-left: 60px;
+    padding-top: 20%;
+  }
+
+  &__text {
+    width: 50%;
+    color: var(--font-color);
+  }
+
+  &__heading {
+    line-height: 1;
+  }
+
+  &__paragraph {
+    font-size: 1.3rem;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.socials {
+
+  &__list {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &__link {
+    display: block;
+    height: 30px;
+    width: 30px;
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.nav {
+
+  &__list {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &__link {
+    color: var(--font-color);
+    @mixin main-font;
+  }
+}
