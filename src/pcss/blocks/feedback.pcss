@@ -1,0 +1,46 @@
+.feedback {
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    width: 40%;
+    @mixin h-font;
+    font-size: 3rem;
+    color: var(--secondary-color);
+  }
+
+  &__form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      @mixin main-font;
+      font-size: 0.8rem;
+      margin-bottom: 4px;
+    }
+  }
+
+  &__input {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+  }
+
+  textarea {
+    min-height: 80px;
+  }
+
+
+  &__button {
+    max-width: 120px;
+  }
+}
