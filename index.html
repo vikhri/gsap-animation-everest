@@ -8,6 +8,8 @@
   </head>
   <body>
   <section class="hero">
+    <img class="hero__bg mount-layer" src="src/images/mountain.png" alt=""/>
+    <img class="hero__bg bg-layer" src="src/images/background.png" alt=""/>
     <header class="hero__header header">
       <div class="hero_socials socials">
         <ul class="socials__list">
@@ -53,13 +55,14 @@
     </div>
   </section>
   <section class="mounts section">
-    <div class="section__intro">
+    <div class="section__intro mounts-intro">
     <h2 class="section__intro-heading">About Nepalese Mountains</h2>
     <p class="section__intro-desc">
       Discover the breathtaking landscapes and serene beauty of Nepal's mountains. From the awe-inspiring peaks of the Himalayas to lush valleys, Nepal offers an unforgettable experience for adventurers and nature enthusiasts
     </p>
     </div>
-    <div class="mounts__content">
+    <div class="mounts__mounts slides" id="slides">
+    <div class="mounts__content slide slide1">
       <div class="mounts__desc">
         <h3 class="mounts__name"> Mount Everest</h3>
         <dl><dt>Height:</dt><dd>8,848 meters (29,029 feet)</dd></dl>
@@ -70,7 +73,7 @@
         <img class="mounts__img" src="src/images/everest.jpg" alt="everest">
       </div>
     </div>
-    <div class="mounts__content">
+    <div class="mounts__content slide slide2">
       <div class="mounts__desc">
         <h3 class="mounts__name">Annapurna Range</h3>
         <dl><dt>Height:</dt><dd>Various peaks above 7,000 meters (22,966 feet)</dd></dl>
@@ -81,7 +84,7 @@
         <img class="mounts__img" src="src/images/larapurna.jpeg" alt="annapurna">
       </div>
     </div>
-    <div class="mounts__content">
+    <div class="mounts__content slide slide3">
       <div class="mounts__desc">
         <h3 class="mounts__name">Langtang Valley</h3>
         <dl><dt>Height:</dt><dd>Peaks around 7,000 meters (22,966 feet)</dd></dl>
@@ -91,6 +94,7 @@
       <div class="mounts__img-wrapper">
         <img class="mounts__img" src="src/images/valley.jpg" alt="langtang valley">
       </div>
+    </div>
     </div>
 
   </section>

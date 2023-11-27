@@ -1,14 +1,47 @@
 .mounts {
+  position: relative;
   display: flex;
   flex-direction: column;
   row-gap: 50px;
+  overflow-x: hidden;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 250px;
+    top: -200px;
+    background-color: var(--secondary-color);
+    z-index: 4;
+  }
 
   &__content {
+    width: 100%;
     display: flex;
-    column-gap: 50px;
+    flex: 0 0 auto;
+    //column-gap: 50px;
     justify-content: space-between;
     align-items: center;
   }
+
+  &__mounts {
+    display: flex;
+    column-gap: 10%;
+  }
+
+  .slide {
+    position: relative;
+  }
+  .slide::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    right: -5%;
+    background-color: var(--secondary-color);
+  }
+
+
 
   &__desc {
     width: 30%;
