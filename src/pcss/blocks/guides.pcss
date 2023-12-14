@@ -1,4 +1,14 @@
 .guides {
+  position: relative;
+  height: 150vh;
+
+
+  &__wrapper {
+    position: sticky;
+    top: 10%;
+    //background-color: aliceblue;
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;
@@ -11,6 +21,12 @@
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+    align-items: center;
+  }
+
+  &__image {
+    clip-path: circle(50%);
+    width: 70%;
   }
 
   &__capture {
@@ -21,7 +37,7 @@
 
   &__name {
     @mixin h-font;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--secondary-color);
   }
 

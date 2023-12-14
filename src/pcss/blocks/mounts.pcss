@@ -3,14 +3,14 @@
   display: flex;
   flex-direction: column;
   row-gap: 50px;
-  overflow-x: hidden;
+  height: 160vh;
 
   &::before {
     position: absolute;
     content: '';
     width: 2px;
-    height: 250px;
-    top: -200px;
+    height: 150px;
+    top: -100px;
     background-color: var(--secondary-color);
     z-index: 4;
   }
@@ -29,19 +29,28 @@
     column-gap: 10%;
   }
 
+  &__wrapper {
+    position: sticky;
+    top: 10%;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 2px;
+      height: 150px;
+      top: -180px;
+      background-color: var(--secondary-color);
+      z-index: 4;
+    }
+  }
+
+  .slides {
+    overflow-x: hidden;
+  }
+
   .slide {
     position: relative;
   }
-  .slide::after {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    right: -5%;
-    background-color: var(--secondary-color);
-  }
-
-
 
   &__desc {
     width: 30%;

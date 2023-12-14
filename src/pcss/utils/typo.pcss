@@ -11,9 +11,13 @@ p {
 }
 
 a {
+  cursor: pointer;
 
   &:hover {
-    opacity: 80%;
+    color: var(--secondary-color);
+    svg g{
+      fill: var(--secondary-color);
+    }
   }
 }
 
